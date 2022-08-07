@@ -2,8 +2,8 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### v0.0.1
+#### v0.0.2
 
-> 6 August 2022
+> 7 August 2022
 
-- Initial commit [`5d2d55b`](https://github.com/fireblocks/hardhat-fireblocks/commit/5d2d55b2120018217fea95f933c21a84bd296512)
+- Update package-lock.json [`3003ff3`](https://github.com/fireblocks/hardhat-fireblocks/commit/3003ff31d0d08f3927345f4a67fcc6a447082abf)
