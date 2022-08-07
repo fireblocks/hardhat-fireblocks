@@ -1,7 +1,8 @@
 # Fireblocks Hardhat Plugin
-> **Warning**
-> This package is in an early beta stage and should not be used in production environments.
-> The provided interfaces are likely to have breaking changes.
+> **Warning**  
+> This package is in an early beta stage and should not be used in production environments.  
+> The provided interfaces are likely to have breaking changes.  
+> For a stable library (with a different paradigm) you can use the DeFi SDK (https://github.com/fireblocks/fireblocks-defi-sdk)
 
 This is a [Hardhat](https://hardhat.org/) plugin for integrating with [Fireblocks](https://www.fireblocks.com/).
 
