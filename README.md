@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/@fireblocks%2Fhardhat-fireblocks.svg)](https://badge.fury.io/js/@fireblocks%2Fhardhat-fireblocks)
+
 # Fireblocks Hardhat Plugin
 > **Warning**  
 > This package is in an early beta stage and should not be used in production environments.  
