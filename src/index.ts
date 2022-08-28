@@ -30,6 +30,7 @@ extendConfig(
           throw new Error('Fireblocks is only supported for public networks.');
         }
         (config.networks[networkName] as HttpNetworkUserConfig).fireblocks = {
+          note: "Created by Fireblocks Hardhat Plugin",
           ...network.fireblocks,
           rpcUrl: network.url,
         }
