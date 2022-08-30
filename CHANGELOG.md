@@ -2,8 +2,8 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### v0.0.3
+#### v0.0.4
 
-> 29 August 2022
+> 30 August 2022
 
-- Bump @fireblocks/fireblocks-web3-provider to 0.0.3 [`c01f0b3`](https://github.com/fireblocks/hardhat-fireblocks/commit/c01f0b31df6c3ee78929fd46c39d29f1c8f86785)
+- Bump @fireblocks/fireblocks-web3-provider to 0.0.4 [`f8f27ef`](https://github.com/fireblocks/hardhat-fireblocks/commit/f8f27efc77eb894007b0e37e490f5d207f124a98)
