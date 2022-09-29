@@ -42,7 +42,7 @@ module.exports = {
   solidity: "0.8.9",
   networks: {
     ropsten: {
-      url: "https://ropsten.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+      url: "https://rpc.ankr.com/eth_goerli",
       fireblocks: {
         privateKey: process.env.FIREBLOCKS_API_PRIVATE_KEY_PATH,
         apiKey: process.env.FIREBLOCKS_API_KEY,
