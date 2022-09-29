@@ -41,7 +41,7 @@ This is an example of how to set it:
 module.exports = {
   solidity: "0.8.9",
   networks: {
-    ropsten: {
+    goerli: {
       url: "https://rpc.ankr.com/eth_goerli",
       fireblocks: {
         privateKey: process.env.FIREBLOCKS_API_PRIVATE_KEY_PATH,
