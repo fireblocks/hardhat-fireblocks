@@ -2,8 +2,8 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
-#### v0.0.6
+#### v0.0.7
 
-> 16 September 2022
+> 29 September 2022
 
-- Update package-lock.json [`922b7cc`](https://github.com/fireblocks/hardhat-fireblocks/commit/922b7ccbe47cf45660dfda4c6c06b883b0ff9017)
+- Update fireblocks-web3-provider to 0.0.7 [`17bbd2d`](https://github.com/fireblocks/hardhat-fireblocks/commit/17bbd2dec07313f5f611abadc0056e15367fcf54)
