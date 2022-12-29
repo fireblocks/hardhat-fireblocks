@@ -1,6 +1,6 @@
 {
   "name": "@fireblocks/hardhat-fireblocks",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "description": "Hardhat plugin for integrating with Fireblocks",
   "repository": "github:fireblocks/hardhat-fireblocks",
   "author": "Fireblocks",

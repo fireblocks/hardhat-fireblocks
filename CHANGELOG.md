@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+### [v1.0.0](https://github.com/fireblocks/hardhat-fireblocks/compare/v0.0.9...v1.0.0)
+
+> 29 December 2022
+
+- Publish v1 release [`#3`](https://github.com/fireblocks/hardhat-fireblocks/pull/3)
+- release 0.0.9 [`c37c1f5`](https://github.com/fireblocks/hardhat-fireblocks/commit/c37c1f51e43368624a3d14c9576a9803dcbdece1)
+- remove "Beta" warning message [`115d08b`](https://github.com/fireblocks/hardhat-fireblocks/commit/115d08b923e217ba3bcbe46974c7adf2476209b1)
+
 #### [v0.0.9](https://github.com/fireblocks/hardhat-fireblocks/compare/v0.0.8...v0.0.9)
 
 > 29 September 2022
