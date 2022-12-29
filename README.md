@@ -1,10 +1,6 @@
 [![npm version](https://badge.fury.io/js/@fireblocks%2Fhardhat-fireblocks.svg)](https://badge.fury.io/js/@fireblocks%2Fhardhat-fireblocks)
 
 # Fireblocks Hardhat Plugin
-> **Warning**  
-> This package is in a beta stage and should be used at your own risk.  
-> The provided interfaces might go through backwards-incompatibale changes.  
-> For a more stable library (with a different paradigm) you can use the DeFi SDK (https://github.com/fireblocks/fireblocks-defi-sdk)
 
 This is a [Hardhat](https://hardhat.org/) plugin for integrating with [Fireblocks](https://www.fireblocks.com/).
 
