@@ -4,7 +4,7 @@
 
 This is a [Hardhat](https://hardhat.org/) plugin for integrating with [Fireblocks](https://www.fireblocks.com/).
 
-This plugin will help you to seamlessly intergrate Fireblocks into your Hardhat development stack.
+This plugin will help you to seamlessly integrate Fireblocks into your Hardhat development stack.
 
 You can use it to deploy contracts and sign transactions and messages.
 
