@@ -11,7 +11,8 @@
     "esModuleInterop": true,
     "typeRoots": [
       "node_modules/@types"
-    ]
+    ],
+    "resolveJsonModule": true
   },
   "exclude": ["dist", "node_modules"],
   "include": [
