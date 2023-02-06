@@ -12,6 +12,8 @@ import {
   HttpNetworkUserConfig,
 } from "hardhat/types";
 
+import { version as SDK_VERSION } from "../package.json";
+
 import { FireblocksSigner } from "./provider";
 import "./type-extensions";
 
@@ -33,7 +35,8 @@ extendConfig(
           note: "Created by Fireblocks Hardhat Plugin",
           ...network.fireblocks,
           rpcUrl: network.url,
-        }
+          userAgent: `hardhat-fireblocks/${SDK_VERSION}`,
+        };
       }
     }
   }
