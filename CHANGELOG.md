@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v1.1.0](https://github.com/fireblocks/hardhat-fireblocks/compare/v1.0.0...v1.1.0)
+
+> 7 February 2023
+
+- Add User-Agent [`#6`](https://github.com/fireblocks/hardhat-fireblocks/pull/6)
+- Simple typo fix inside README.md [`#5`](https://github.com/fireblocks/hardhat-fireblocks/pull/5)
+- update package-lock.json - use version 1 for backward compatibility [`3a29608`](https://github.com/fireblocks/hardhat-fireblocks/commit/3a29608dcf83f4b07d2834c3c3aae54dec1b9f11)
+- Update fireblocks-web3-provider [`888bd33`](https://github.com/fireblocks/hardhat-fireblocks/commit/888bd337e3f8bbddeafd52c2ca189d864fc93f82)
+- pass SDK_VERSION to userAgent config, update package.json [`7838e10`](https://github.com/fireblocks/hardhat-fireblocks/commit/7838e10e861c3aa00dc8667238e80d3c377f569b)
+- release 1.0.0 [`9a52320`](https://github.com/fireblocks/hardhat-fireblocks/commit/9a5232017f4e080a93691e62f78bafe63b54c4fe)
+- Fix typo in README.md [`a3fab64`](https://github.com/fireblocks/hardhat-fireblocks/commit/a3fab6402f92f8f8a2bed9090354e8380218a685)
+
 ### [v1.0.0](https://github.com/fireblocks/hardhat-fireblocks/compare/v0.0.9...v1.0.0)
 
 > 29 December 2022
