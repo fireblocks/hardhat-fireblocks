@@ -18,12 +18,14 @@ Import the plugin in your `hardhat.config.js`:
 
 ```js
 require("@fireblocks/hardhat-fireblocks");
+const { ApiBaseUrl } = require("@fireblocks/fireblocks-web3-provider");
 ```
 
 Or if you are using TypeScript, in your `hardhat.config.ts`:
 
 ```ts
 import "@fireblocks/hardhat-fireblocks";
+import { ApiBaseUrl } from "@fireblocks/fireblocks-web3-provider";
 ```
 
 ## Configuration
@@ -35,11 +37,12 @@ This is an example of how to set it:
 
 ```js
 module.exports = {
-  solidity: "0.8.9",
+  solidity: "0.8.17",
   networks: {
     goerli: {
       url: "https://rpc.ankr.com/eth_goerli",
       fireblocks: {
+        // apiBaseUrl: ApiBaseUrl.Sandbox // If using a sandbox workspace
         privateKey: process.env.FIREBLOCKS_API_PRIVATE_KEY_PATH,
         apiKey: process.env.FIREBLOCKS_API_KEY,
         vaultAccountIds: process.env.FIREBLOCKS_VAULT_ACCOUNT_IDS,
