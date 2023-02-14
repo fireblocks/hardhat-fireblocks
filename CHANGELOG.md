@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v1.1.2](https://github.com/fireblocks/hardhat-fireblocks/compare/v1.1.1...v1.1.2)
+
+> 14 February 2023
+
+- Update fireblocks-web3-provider and set logTransactionStatusChanges=true by default [`2e1c39e`](https://github.com/fireblocks/hardhat-fireblocks/commit/2e1c39e555da480550d83d3484fa7723d3220188)
+- release 1.1.1 [`f3f195c`](https://github.com/fireblocks/hardhat-fireblocks/commit/f3f195c6a725e996a41aaca119d6158c48f3c878)
+
 #### [v1.1.1](https://github.com/fireblocks/hardhat-fireblocks/compare/v1.1.0...v1.1.1)
 
 > 7 February 2023
