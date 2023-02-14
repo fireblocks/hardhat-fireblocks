@@ -33,6 +33,7 @@ extendConfig(
         }
         (config.networks[networkName] as HttpNetworkUserConfig).fireblocks = {
           note: "Created by Fireblocks Hardhat Plugin",
+          logTransactionStatusChanges: true,
           ...network.fireblocks,
           rpcUrl: network.url,
           userAgent: `hardhat-fireblocks/${SDK_VERSION}`,
