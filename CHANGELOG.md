@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v1.2.2](https://github.com/fireblocks/hardhat-fireblocks/compare/v1.2.1...v1.2.2)
+
+> 7 May 2023
+
+- Bump undici from 5.10.0 to 5.22.0 [`#10`](https://github.com/fireblocks/hardhat-fireblocks/pull/10)
+- Sepolia support [`6a95215`](https://github.com/fireblocks/hardhat-fireblocks/commit/6a9521537ac307b2d473e4af3e1d1320f7dabbb3)
+- release 1.2.1 [`65dda56`](https://github.com/fireblocks/hardhat-fireblocks/commit/65dda56bb360d974bd2f1bf410037934c258162b)
+
 #### [v1.2.1](https://github.com/fireblocks/hardhat-fireblocks/compare/v1.1.4...v1.2.1)
 
 > 25 February 2023
