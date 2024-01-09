@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v1.3.1](https://github.com/fireblocks/hardhat-fireblocks/compare/v1.2.2...v1.3.1)
+
+> 9 January 2024
+
+- Bump @fireblocks/fireblocks-web3-provider to 1.3.1 [`7317934`](https://github.com/fireblocks/hardhat-fireblocks/commit/73179348577676e5fc131a69b1ce36ea193efddf)
+- release 1.2.2 [`90c7f8f`](https://github.com/fireblocks/hardhat-fireblocks/commit/90c7f8f55e1d269665240c15085b208289d2499c)
+
 #### [v1.2.2](https://github.com/fireblocks/hardhat-fireblocks/compare/v1.2.1...v1.2.2)
 
 > 7 May 2023
