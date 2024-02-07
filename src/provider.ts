@@ -11,10 +11,6 @@ export class FireblocksSigner extends ProviderWrapperWithChainId {
   }
 
   public async request(args: RequestArguments): Promise<unknown> {
-    if (SIGNER_METHODS.includes(args.method)) {
-      return this._fireblocksWeb3Provider!.request(args);
-    }
-
-    return this._wrappedProvider.request(args);
+    return this._fireblocksWeb3Provider!.request(args);
   }
 }
