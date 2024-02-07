@@ -11,7 +11,6 @@ import {
   HardhatUserConfig,
   HttpNetworkUserConfig,
 } from "hardhat/types";
-import { ProxyAgent } from "undici";
 
 import { version as SDK_VERSION } from "../package.json";
 
@@ -27,12 +26,10 @@ extendConfig(
     for (const networkName in userNetworks) {
       const network = userNetworks[networkName]! as HttpNetworkUserConfig;
       if (network.fireblocks) {
-        if (
-          networkName === "hardhat" ||
-          (network.url || "").includes("localhost") ||
-          (network.url || "").includes("127.0.0.1")
-        ) {
-          throw new Error("Fireblocks is only supported for public networks.");
+        if (networkName === "hardhat"
+          || (network.url || "").includes('localhost')
+          || (network.url || "").includes('127.0.0.1')) {
+          throw new Error('Fireblocks is only supported for public networks.');
         }
         (config.networks[networkName] as HttpNetworkUserConfig).fireblocks = {
           note: "Created by Fireblocks Hardhat Plugin",
@@ -48,18 +45,12 @@ extendConfig(
 
 extendEnvironment((hre) => {
   if ((hre.network.config as HttpNetworkUserConfig).fireblocks) {
-    let dispatcher = undefined;
     const httpNetConfig = hre.network.config as HttpNetworkUserConfig;
-    const fireblocksConfig = (hre.network.config as HttpNetworkUserConfig).fireblocks!;
-    if(fireblocksConfig.proxyPath){
-      dispatcher = new ProxyAgent(fireblocksConfig.proxyPath!)
-    }
     const eip1193Provider = new HttpProvider(
       httpNetConfig.url!,
       hre.network.name,
       httpNetConfig.httpHeaders,
-      httpNetConfig.timeout,
-      dispatcher
+      httpNetConfig.timeout
     );
     let wrappedProvider: EIP1193Provider;
     wrappedProvider = new FireblocksSigner(
