@@ -11,7 +11,7 @@ import {
   HardhatUserConfig,
   HttpNetworkUserConfig,
 } from "hardhat/types";
-import { Dispatcher, ProxyAgent } from 'undici';
+import { Dispatcher, ProxyAgent, setGlobalDispatcher } from "undici";
 
 import { version as SDK_VERSION } from "../package.json";
 
@@ -27,10 +27,12 @@ extendConfig(
     for (const networkName in userNetworks) {
       const network = userNetworks[networkName]! as HttpNetworkUserConfig;
       if (network.fireblocks) {
-        if (networkName === "hardhat"
-          || (network.url || "").includes('localhost')
-          || (network.url || "").includes('127.0.0.1')) {
-          throw new Error('Fireblocks is only supported for public networks.');
+        if (
+          networkName === "hardhat" ||
+          (network.url || "").includes("localhost") ||
+          (network.url || "").includes("127.0.0.1")
+        ) {
+          throw new Error("Fireblocks is only supported for public networks.");
         }
         (config.networks[networkName] as HttpNetworkUserConfig).fireblocks = {
           note: "Created by Fireblocks Hardhat Plugin",
@@ -47,10 +49,15 @@ extendConfig(
 extendEnvironment((hre) => {
   if ((hre.network.config as HttpNetworkUserConfig).fireblocks) {
     const httpNetConfig = hre.network.config as HttpNetworkUserConfig;
-    const fireblocksW3PConfig =(hre.network.config as HttpNetworkUserConfig).fireblocks!;
+    const fireblocksW3PConfig = (hre.network.config as HttpNetworkUserConfig)
+      .fireblocks!;
     let dispatcher: Dispatcher | undefined = undefined;
-    if(fireblocksW3PConfig.proxyPath){
-      dispatcher = new ProxyAgent(fireblocksW3PConfig.proxyPath!);
+    if (fireblocksW3PConfig.proxyPath) {
+      dispatcher = new ProxyAgent({
+        uri: fireblocksW3PConfig.proxyPath!,
+        connect: { timeout: 60000 },
+      });
+      setGlobalDispatcher(dispatcher);
     }
     const eip1193Provider = new HttpProvider(
       httpNetConfig.url!,
