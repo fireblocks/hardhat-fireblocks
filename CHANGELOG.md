@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v1.3.3](https://github.com/fireblocks/hardhat-fireblocks/compare/v1.3.2...v1.3.3)
+
+> 8 February 2024
+
+- feat: add proxy support [`#12`](https://github.com/fireblocks/hardhat-fireblocks/pull/12)
+- release 1.3.2 [`a41d13c`](https://github.com/fireblocks/hardhat-fireblocks/commit/a41d13c4c8b5ea0cb58f3e9fa5eb88da9671eebe)
+
 #### [v1.3.2](https://github.com/fireblocks/hardhat-fireblocks/compare/v1.3.1...v1.3.2)
 
 > 1 February 2024
