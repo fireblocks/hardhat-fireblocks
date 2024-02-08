@@ -11,6 +11,7 @@ import {
   HardhatUserConfig,
   HttpNetworkUserConfig,
 } from "hardhat/types";
+import { Dispatcher, ProxyAgent } from 'undici';
 
 import { version as SDK_VERSION } from "../package.json";
 
@@ -46,16 +47,22 @@ extendConfig(
 extendEnvironment((hre) => {
   if ((hre.network.config as HttpNetworkUserConfig).fireblocks) {
     const httpNetConfig = hre.network.config as HttpNetworkUserConfig;
+    const fireblocksW3PConfig =(hre.network.config as HttpNetworkUserConfig).fireblocks!;
+    let dispatcher: Dispatcher | undefined = undefined;
+    if(fireblocksW3PConfig.proxyPath){
+      dispatcher = new ProxyAgent(fireblocksW3PConfig.proxyPath!);
+    }
     const eip1193Provider = new HttpProvider(
       httpNetConfig.url!,
       hre.network.name,
       httpNetConfig.httpHeaders,
-      httpNetConfig.timeout
+      httpNetConfig.timeout,
+      dispatcher
     );
     let wrappedProvider: EIP1193Provider;
     wrappedProvider = new FireblocksSigner(
       eip1193Provider,
-      (hre.network.config as HttpNetworkUserConfig).fireblocks!
+      fireblocksW3PConfig
     );
     wrappedProvider = new AutomaticGasProvider(
       wrappedProvider,
