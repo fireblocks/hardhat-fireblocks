@@ -3,6 +3,7 @@ import { BackwardsCompatibilityProviderAdapter } from "hardhat/internal/core/pro
 import {
   AutomaticGasPriceProvider,
   AutomaticGasProvider,
+  FixedGasPriceProvider,
 } from "hardhat/internal/core/providers/gas-providers";
 import { HttpProvider } from "hardhat/internal/core/providers/http";
 import {
@@ -68,7 +69,11 @@ extendEnvironment((hre) => {
       wrappedProvider,
       hre.network.config.gasMultiplier
     );
-    wrappedProvider = new AutomaticGasPriceProvider(wrappedProvider);
+    if (hre.network.config.gasPrice === undefined || hre.network.config.gasPrice === "auto") {
+      wrappedProvider = new AutomaticGasPriceProvider(wrappedProvider);
+    } else {
+      wrappedProvider = new FixedGasPriceProvider(wrappedProvider, hre.network.config.gasPrice);
+    }
     hre.network.provider = new BackwardsCompatibilityProviderAdapter(
       wrappedProvider
     );
