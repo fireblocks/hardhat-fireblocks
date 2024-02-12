@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v1.3.4](https://github.com/fireblocks/hardhat-fireblocks/compare/v1.3.3...v1.3.4)
+
+> 12 February 2024
+
+- release 1.3.3 [`6de3f01`](https://github.com/fireblocks/hardhat-fireblocks/commit/6de3f016da81c694f4f4e41d03181c3ca046a031)
+- Support config.gasPrice [`7c8c217`](https://github.com/fireblocks/hardhat-fireblocks/commit/7c8c2178bdcd35a32dd01e59b64b9bb54052fe33)
+
 #### [v1.3.3](https://github.com/fireblocks/hardhat-fireblocks/compare/v1.3.2...v1.3.3)
 
 > 8 February 2024
