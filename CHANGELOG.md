@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v1.3.5](https://github.com/fireblocks/hardhat-fireblocks/compare/v1.3.4...v1.3.5)
+
+> 18 February 2024
+
+- fix: :bug: set global dispatcher for proxy config [`#13`](https://github.com/fireblocks/hardhat-fireblocks/pull/13)
+- Update fireblocks-web3-provider [`ce389c1`](https://github.com/fireblocks/hardhat-fireblocks/commit/ce389c1e4e08ea5954576143234d3a6e23fa1052)
+- release 1.3.4 [`048455b`](https://github.com/fireblocks/hardhat-fireblocks/commit/048455bed90297d63bb981a869ccc025a29555b3)
+
 #### [v1.3.4](https://github.com/fireblocks/hardhat-fireblocks/compare/v1.3.3...v1.3.4)
 
 > 12 February 2024
