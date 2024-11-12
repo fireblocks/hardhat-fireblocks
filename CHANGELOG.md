@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v1.3.6](https://github.com/fireblocks/hardhat-fireblocks/compare/v1.3.5...v1.3.6)
+
+> 12 November 2024
+
+- Update dependencies [`#17`](https://github.com/fireblocks/hardhat-fireblocks/pull/17)
+- release 1.3.5 [`b6c4cca`](https://github.com/fireblocks/hardhat-fireblocks/commit/b6c4cca0c25840f621ca5fabfb9bdcda4998853e)
+
 #### [v1.3.5](https://github.com/fireblocks/hardhat-fireblocks/compare/v1.3.4...v1.3.5)
 
 > 18 February 2024
